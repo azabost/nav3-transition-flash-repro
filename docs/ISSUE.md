@@ -41,11 +41,11 @@ Each screen logs its draw calls via `Modifier.drawBehind` and displays the curre
 
 ### Expected behavior
 
-When all transitions are set to `EnterTransition.None` / `ExitTransition.None`, the new screen should appear **immediately** on the next frame after the back-stack change — with zero frames of the old screen rendered.
+When all transitions are set to `EnterTransition.None` / `ExitTransition.None`, the new screen should appear **immediately** after the back-stack change — with zero frames of the old screen rendered.
 
 ### Actual behavior
 
-One frame of the **old screen** (AppList) is rendered before the new screen (Home) appears.
+The **old screen** (AppList) is rendered before the new screen (Home) appears.
 
 ### Evidence
 
