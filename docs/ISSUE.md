@@ -16,6 +16,10 @@ When `NavDisplay` is configured with `EnterTransition.None` and `ExitTransition.
 
 On a standard screen, a single stale frame is barely perceptible. On an E-Ink display, however, it causes a clearly visible flash: the display refreshes once for the stale frame (showing the old screen), then refreshes again for the correct screen.
 
+### Sample project
+
+https://github.com/azabost/nav3-transition-flash-repro
+
 ### Steps to reproduce
 
 The attached sample project is a minimal launcher app with two screens:
@@ -78,7 +82,3 @@ W NavFlashBug: Compose: backStack=[Home, AppList]
 W NavFlashBug: Home draw (backStack=[Home, AppList])        -- Home draws even though AppList is on top
 W NavFlashBug: AppList draw (backStack=[Home, AppList])     -- correct frame
 ```
-
-### Sample project
-
-https://github.com/azabost/nav3-transition-flash-repro
