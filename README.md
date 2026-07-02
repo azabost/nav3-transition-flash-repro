@@ -4,7 +4,7 @@ Minimal Android launcher app demonstrating a bug in **Navigation3** (`1.2.0-alph
 
 ## The bug
 
-<video src="docs/nav_flash_repro.mp4" width="240" controls></video>
+https://github.com/user-attachments/assets/46547393-9d7c-4815-bd66-1b10088ea7bb
 
 After pressing the Home button, **AppList flashes for one frame** before Home appears. The on-screen `backStack=` text proves the inconsistency — AppList is rendered with `backStack=[Home]`, meaning it should not be visible.
 
