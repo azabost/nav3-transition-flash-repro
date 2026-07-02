@@ -65,12 +65,6 @@ The back-stack is cleared immediately. The composition already sees `[Home]`. Ye
 
 #### Frame-by-frame analysis (screen recording)
 
-| Frame | Screen shown | backStack text on screen | Notes |
-|-------|-------------|--------------------------|-------|
-| N | Calculator | — | User presses Home button |
-| N+1 | **AppList** | `backStack=[Home]` | **Bug: AppList visible but already removed from backStack** |
-| N+2 | Home | `backStack=[Home]` | Correct screen finally appears |
-
 The on-screen `backStack=` text visually confirms the inconsistency: the user sees "AppList" while the text says `[Home]`.
 
 ### Same issue on forward navigation
